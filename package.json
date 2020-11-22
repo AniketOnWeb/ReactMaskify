@@ -1,8 +1,35 @@
 {
-  "name": "react-input-mask",
-  "version": "1.0.0",
+  "name": "react-input-maskify",
+  "version": "1.0.4",
   "description": "",
-  "main": "index.js",
-  "author": "",
-  "license": "ISC"
+  "main": "src/Fancy.js",
+  "author": {
+    "name": "Aniket Chaudhary",
+    "email": "chaudharyaniket16@gmail.com"
+  },
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^15.5.4"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "webpack": "^4.29.6"
+  },
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack",
+    "test": "react-scripts test",
+    "publish:npm": "rm -rf dist && mkdir dist &&  babel src/components -d dist --copy-files"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "7.12.7",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "webpack-cli": "^3.3.0",
+    "@babel/plugin-transform-react-jsx": "^7.12.7"
+  }
 }
