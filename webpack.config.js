@@ -1,11 +1,11 @@
 var path = require("path");
 
 module.exports = {
-  entry: "./src/Fancy.js",
-  mode: "development",
+  entry: "./src/ReactMaskedInput.js",
+  mode: "production",
   output: {
     path: path.resolve(__dirname, "build"),
-    filename: "Fancy.js",
+    filename: "ReactMaskedInput.js",
     libraryTarget: "commonjs2",
   },
   module: {
@@ -17,7 +17,15 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            plugins: ["@babel/plugin-transform-react-jsx"],
+            plugins: [
+              "@babel/plugin-transform-react-jsx",
+              [
+                "@babel/plugin-proposal-class-properties",
+                {
+                  loose: true,
+                },
+              ],
+            ],
             presets: [
               "@babel/preset-react",
               ["@babel/preset-env", { targets: "defaults" }],

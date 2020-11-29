@@ -1,4 +1,4 @@
-import CommonManipulators from "./src/CommonManipulators";
+import CommonManipulators from "./CommonManipulators";
 
 const emptyArray = [];
 const emptyString = "";

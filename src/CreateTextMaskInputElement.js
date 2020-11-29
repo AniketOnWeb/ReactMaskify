@@ -1,6 +1,6 @@
 import AdjustCaretPosition from "./AdjustCaretPosition";
 import ConformToMask from "./ConformToMask";
-import CommonManipulators from "./src/CommonManipulators";
+import CommonManipulators from "./CommonManipulators";
 
 const {
   convertMaskToPlaceholder,
